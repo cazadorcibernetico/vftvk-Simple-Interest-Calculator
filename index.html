@@ -10,25 +10,23 @@
                 <h1>Simple Interest Calculator</h1>    
         Amount <input type="number"  id="principal">  <br/>
         <range>
-            Rate <input type="range" min="1" max="20" step="0.25" value="10.25" id="rate"> <span> "10.25%"  </span> <br/> 
+        Interest Rate <input type="range" min="1" max="20" step="0.25" value="10.25" id="rate" onchange="updateSlider(this.value)"> <span id="sliderAmount" ></span> <br/> 
         </range> 
         <label> No. of Years:  </label>
             <select name="years" id="years">
-                <option value="1-year">1-year</option>
-                <option value="2-years">2-years</option>
-                <option value="3-years">3-years</option>
-                <option value="4-years">4-years</option>                <option value="2-years">2-years</option>
-                <option value="5-years">5-years</option>                <option value="2-years">2-years</option>
-                <option value="6-years">6-years</option>                <option value="2-years">2-years</option>
-                <option value="7-years">7-years</option>                <option value="2-years">2-years</option>
-                <option value="8-years">8-years</option>                <option value="2-years">2-years</option>
-                <option value="9-years">9-years</option>                <option value="2-years">2-years</option>
-                <option value="10-years">10-years</option>                <option value="2-years">2-years</option>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>                
+                <option value=5>5</option>               
+                <option value=6>6</option>                
+                <option value=7>7</option>                
+                <option value=8>8</option>                
+                <option value=9>9</option>                
+                <option value=10>10</option>              
             </select><br/> 
-        Interest : <span id="result"></span><br>
-                <button onclick="compute()">Compute Interest</button>
-        <span>id="result"</span> <br><br/>
-            <footer>© Everyone Can Get Rich</footer>
+        <button onclick="compute()">Compute Interest</button> <br><br/> <span id="result">  </span> <br><br/>
+        <footer>© Everyone Can Get Rich</footer>
         </div>
     </body>
 </html>
